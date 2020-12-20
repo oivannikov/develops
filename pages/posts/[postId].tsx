@@ -1,7 +1,6 @@
-import { getPost } from '../api/posts';
-
 import { NextPage } from 'next';
 
+import { getPost } from '../api/posts';
 import { IPost } from '../interfaces';
 
 interface PostProps {
@@ -9,14 +8,14 @@ interface PostProps {
 }
 
 const Post: NextPage<PostProps> = ({ post }) => {
-
   const { title, body } = post;
 
   return (
     <div className="post">
       <div className="post__content">
         <div className="post__name">{title}</div>
-        <div className="post-left_border"></div>
+        <div className="post__border"></div>
+
         <div className="post__author">
           <p>Develops Today</p>
         </div>
@@ -32,11 +31,13 @@ const Post: NextPage<PostProps> = ({ post }) => {
   );
 }
 
-Post.getInitialProps = async ({ query }): Promise<PostProps> => {
+export async function getServerSideProps({ query }) {
   const postId = +query.postId;
   const post = await getPost(postId);
 
-  return { post };
+  return {
+    props: {post}
+  };
 }
 
 export default Post;

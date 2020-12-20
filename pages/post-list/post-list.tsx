@@ -10,12 +10,14 @@ interface PostListProps {
 
 const PostList: React.FC<PostListProps> = ({ posts }) => {
   return (
-    <ul>
+    <ul className="list">
     {
-      posts.map((post: IPost) => (
-        <li key={post.id}>
-          <Link href={`/post/[postId]`} as={`/post/${post.id}`}>
-            <a>{post.title}</a>
+      (posts || []).map((post: IPost) => (
+        <li className="list__item" key={post.id}>
+          <p className="list__title">{post.title}</p>
+
+          <Link href={`/posts/postId`} as={`/posts/${post.id}`}>
+            <span className="list__more">Read more</span>
           </Link>
         </li>
       ))

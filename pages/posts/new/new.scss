@@ -9,7 +9,6 @@ $dark: #484855;
   height: 600px;
   margin: 30px auto 0;
   padding: 20px;
-  // background-color: #424242;
   background-color: #3f3c3c;
 
   &__data,
@@ -65,6 +64,7 @@ $dark: #484855;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     border: 1px solid $dark;
+    border-radius: 4px;
     cursor: pointer;
 
      &:hover {

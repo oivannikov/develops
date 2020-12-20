@@ -10,7 +10,7 @@ $red: #ef5350;
   &__content {
     color: $white;
     padding: 3em;
-    animation: 2s slide-right;
+    animation: 1s slide-right;
   }
 
   &__name {
@@ -20,13 +20,14 @@ $red: #ef5350;
     margin-top: 0.25em;
   }
 
-  &-left_border {
+  &__border {
     border: 2px solid $red;
     width: 15%;
     margin-top: 1em;
   }
 
   &__author {
+    margin-top: 5px;
     bottom: 2em;
     color: $white;
     opacity: 0.5;

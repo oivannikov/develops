@@ -6,6 +6,11 @@ body {
   background-color: #484855;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 button,
 input,
 textarea {
@@ -27,5 +32,7 @@ a {
   box-sizing: border-box;
 }
 
+@import '../pages/index.scss';
+@import '../pages/post-list/post-list.scss';
 @import '../pages/posts/new/new.scss';
-@import './pages/post/post.scss';
+@import '../pages/posts/post.scss';

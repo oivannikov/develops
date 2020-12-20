@@ -49,7 +49,7 @@ const CreatePost = () => {
       <div className="form__actions">
         <button className="form__create" type="submit">Create</button>
 
-        <Link href={'/posts'}>
+        <Link href={'/'}>
           <button className="form__back" type="button">Back</button>
         </Link>
       </div>
