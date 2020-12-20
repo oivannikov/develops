@@ -15,3 +15,7 @@ export async function getPost(postsId: number) {
 
   return post;
 }
+
+export async function createPost(newPost) {
+  return axios.post(`${BASE_URL}/posts`, newPost);
+}

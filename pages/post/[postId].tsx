@@ -9,6 +9,7 @@ interface PostProps {
 }
 
 const Post: NextPage<PostProps> = ({ post }) => {
+
   const { title, body } = post;
 
   return (

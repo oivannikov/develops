@@ -1,21 +1,27 @@
 import { useState } from 'react';
 
+import { useRouter } from 'next/router'
 import Link from 'next/link';
 
+import { createPost } from '../../api/posts';
+
 const CreatePost = () => {
+  const router = useRouter();
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
 
   function handleCreateSubmit(e) {
     e.preventDefault();
 
-    console.log(title);
-    console.log(body);
-    
+    const newPost = {
+      title,
+      body
+    }
 
+    createPost(newPost);
+    router.push('/');
     setTitle('');
     setBody('');
-
   }
 
   return (
@@ -48,7 +54,6 @@ const CreatePost = () => {
         </Link>
       </div>
     </form>
-      
   );
 } 
 

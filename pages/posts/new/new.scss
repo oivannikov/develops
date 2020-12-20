@@ -1,3 +1,5 @@
+$dark: #484855;
+
 .form {
   display: flex;
   flex-direction: column;
@@ -5,9 +7,10 @@
   align-items: center;
   width: 600px;
   height: 600px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding: 20px;
-  background-color: #424242;
+  // background-color: #424242;
+  background-color: #3f3c3c;
 
   &__data,
   &__actions {
@@ -21,23 +24,25 @@
     width: 100%;
     margin: 10px 0;
     padding: 5px 5px;
-    height: 28px;
-    border-bottom: 1px solid gray;
+    height: 32px;
+    border-bottom: 1px solid $dark;
     opacity: 0.7;
     transition: 1.5s;
     font-size: 16px;
     padding-left: 8px;
     color: white;
-    background-color: #26a69a;
+    background-color: $dark;
+    border-radius: 4px;
+    letter-spacing: 1px;
   
     &:focus {
       transition: border-bottom 0.3s;
-      border-bottom: 1px solid #26a69a;
+      border-bottom: 1px solid white;
     }
 
 
     &::placeholder {
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       color: white;
       font-size: 14px;
       opacity: 0.7;
@@ -53,13 +58,13 @@
   &__back {
     width: 100%;
     font-size: 12px;
-    background-color: #26a69a;
-    color: white;
-    padding: 4px 0;
+    background-color: $dark;
+    color: rgb(218, 210, 210);
+    padding: 6px 0;
     font-weight: normal;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    border: 1px solid #26a69a;
+    border: 1px solid $dark;
     cursor: pointer;
 
      &:hover {
