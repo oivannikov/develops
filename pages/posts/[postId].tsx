@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 
 import { getPost } from '../api/posts';
-import { IPost } from '../interfaces';
+import IPost from '../interfaces';
 
 interface PostProps {
   post: IPost

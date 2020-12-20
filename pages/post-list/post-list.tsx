@@ -2,7 +2,7 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import { IPost } from '../interfaces';
+import IPost from '../interfaces';
 
 interface PostListProps {
   posts: IPost[],
