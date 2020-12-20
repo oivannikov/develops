@@ -33,6 +33,7 @@ a {
 }
 
 @import '../pages/index.scss';
-@import '../pages/post-list/post-list.scss';
-@import '../pages/posts/new/new.scss';
-@import '../pages/posts/post.scss';
+
+@import '../components/PostList/PostList.scss';
+@import '../components/NewPost/NewPost.scss';
+@import '../components/Post/Post.scss';
