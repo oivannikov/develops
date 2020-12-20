@@ -7,7 +7,7 @@ import { NextPage } from 'next';
 import PostList from './post-list/post-list';
 
 import { getPosts } from './api/posts';
-import { IPost } from './interfaces';
+import IPost from './interfaces';
 
 interface PostListProps {
   posts: IPost[],

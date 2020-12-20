@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "deploy": "npm run build & gh-pages -d build"
+    "start": "next start"
   },
   "dependencies": {
     "axios": "^0.21.0",
