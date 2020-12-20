@@ -9,7 +9,7 @@ export async function getPosts() {
   return posts;
 }
 
-export async function getPost(postsId) {
+export async function getPost(postsId: number) {
   const response = await axios(`${BASE_URL}/posts/${postsId}`);
   const post = response.data;
 
