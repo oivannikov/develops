@@ -2,13 +2,13 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import IPost from '../interfaces';
+import IPost from '../../interfaces/interfaces';
 
 interface PostListProps {
   posts: IPost[],
 }
 
-const PostList: React.FC<PostListProps> = ({ posts }) => {
+export const PostList: React.FC<PostListProps> = ({ posts }) => {
   return (
     <ul className="list">
     {
@@ -25,5 +25,3 @@ const PostList: React.FC<PostListProps> = ({ posts }) => {
     </ul>
   );
 }
-
-export default PostList;
